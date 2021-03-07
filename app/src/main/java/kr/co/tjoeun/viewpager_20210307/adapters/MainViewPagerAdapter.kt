@@ -15,6 +15,8 @@ class MainViewPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
     }
 
     override fun getItem(position: Int): Fragment {
+/*
+ 아래 return 문과 동일한 표현        
         if (position == 0) {
             return NickFragment()
         }
@@ -23,6 +25,12 @@ class MainViewPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
         }
         else {
             return DescFragment()
+        }
+*/        
+        return when(position) {
+            0 -> NickFragment()
+            1 -> BirthFragment()
+            else -> DescFragment()            
         }
     }
 }
