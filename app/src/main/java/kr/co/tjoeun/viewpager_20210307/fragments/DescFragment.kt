@@ -7,13 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kr.co.tjoeun.viewpager_20210307.R
 
-class NickFragment : Fragment() {
+class DescFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_nick, container, false)
+        return inflater.inflate(R.layout.fragment_desc, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
