@@ -26,6 +26,9 @@ class MainActivity : BaseActivity() {
         mvpa = MainViewPagerAdapter(supportFragmentManager)
 
         mainViewPager.adapter = mvpa
+
+        // xml에 배치한 탭레이아웃과 뷰페이저 연결
+         tabLayout.setupWithViewPager(mainViewPager)
     }
 
 
